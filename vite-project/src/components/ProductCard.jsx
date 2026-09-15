@@ -6,7 +6,7 @@ export default function ProductCard() {
     const handlePayment = async () => {
         try {
             // 1. Backend server se Order create karwayein
-            const res = await fetch("http://localhost:5000/api/order", {
+            const res = await fetch("https://razorpay-integration-v7k7.onrender.com/api/order", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
